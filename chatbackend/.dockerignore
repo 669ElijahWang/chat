@@ -1,0 +1,7 @@
+target
+mdfra/.venv
+.git
+.gitignore
+*.log
+Dockerfile*
+
