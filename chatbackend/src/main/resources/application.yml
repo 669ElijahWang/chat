@@ -4,9 +4,9 @@ spring:
 
   # DataSource Configuration - PostgreSQL
   datasource:
-    url: jdbc:postgresql://81.68.216.8:35432/aichat_db
+    url: jdbc:postgresql:///aichat_db
     username: postgres
-    password: SJL@123456#
+    password: 
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
@@ -32,9 +32,9 @@ spring:
   # Redis Configuration
   data:
     redis:
-      host: 81.68.216.8
+      host: 
       port: 26739
-      password: SJL@123456#
+      password: 
       database: 0
       timeout: 5000ms
       lettuce:
@@ -46,9 +46,9 @@ spring:
 
     # Elasticsearch Configuration
     elasticsearch:
-      uris: http://81.68.216.8:9200
+      uris: http://
       username: elastic
-      password: SJL@123456#
+      password: 
       connection-timeout: 5s
       socket-timeout: 30s
 
@@ -58,10 +58,10 @@ elasticsearch:
 
   # RabbitMQ Configuration
   rabbitmq:
-    host: 81.68.216.8
+    host: 
     port: 5672
     username: rabbitmq
-    password: SJL@123456#
+    password: 
     virtual-host: /
     listener:
       simple:
@@ -91,7 +91,7 @@ server:
 
 # JWT Configuration
 jwt:
-  secret: YourSuperSecretKeyForJWTTokenGenerationPleaseChangeThis123456
+  secret: 
   expiration: 36000000  # 10 hours in milliseconds
   refresh-expiration: 604800000  # 7 days in milliseconds
 
@@ -99,7 +99,7 @@ jwt:
 deepseek:
   api:
     base-url: https://api.deepseek.com
-    api-key: sk-318cd449403e4acf9409c17e2141d949
+    api-key: 
     model: deepseek-chat
     timeout: 60000
     max-retries: 3
@@ -111,7 +111,7 @@ qwen:
 zhipu:
   api:
     base-url: https://open.bigmodel.cn/api/paas/v4
-    api-key: c9a4df886b1e4aff93ef06ab298027c2.U0G4DVba1oyRPfxM
+    api-key: 
 
 # HTTP 代理配置（如果网络无法直接访问 DeepSeek API）
 http:
@@ -124,16 +124,16 @@ http:
 cos:
   client:
     host: wang-1311429185.cos.ap-shanghai.myqcloud.com
-    secretId: AKIDfFk272oOp5DNQJE2iCXzIUXDgzBOJNK8
-    secretKey: i6OYhw5INH1YuQN7dzAB0d4Rkw032whT
+    secretId: 
+    secretKey: 
     region: ap-shanghai
     bucket: wang-1311429185
 # Pexels 图片搜索配置
 pexels:
-  api-key: m93aKqYHYtu3v3YgeF0sbNHMegmklbVwCbfudEZaQxjfDWOnN4HV5soi
+  api-key: 
 # 阿里云 DashScope 配置
 dashscope:
-  api-key: sk-0c13c5e7bc4e45d9b7b6cdaa25d2e667
+  api-key: 
   image-model: wan2.2-t2i-flash
 
 # Application Configuration
